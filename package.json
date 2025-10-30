@@ -8,7 +8,7 @@
         "start": "gulp start",
         "dev": "gulp dev",
         "build": "gulp build",
-        "deploy": "gulp build && gh-pages -d build"
+        "deploy": "gh-pages -d build"
     },
     "keywords": [],
     "author": "Eduard Nabiulin",
