@@ -1,0 +1,23 @@
+body {
+    font-family: SamsungOne, arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+
+    @media screen and (max-width: 1440px) {
+        font-size: .69444444444444444444444444444444vw;
+    }
+
+    @media screen and (max-width: 720px) {
+        font-size: 1.3888888888888888888888888888889vw;
+    }
+}
+
+[class*="__container"] {
+    max-width: calc(1440px + 2em);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
