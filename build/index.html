@@ -9,8 +9,93 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <h1>Ем колбасу</h1>
-        <p>Тестовое содержание</p>
+        <!-- Шапка -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <!-- Замените src на путь к вашему логотипу -->
+                    <img src="logo.png" alt="Логотип сайта" class="logo-img">
+                    <span class="site-name">LinkCatalog</span>
+                </div>
+            </div>
+        </header>
+        <!-- Основной контент -->
+        <main class="main">
+            <div class="container">
+                <!-- Основной заголовок -->
+                <h1 class="page-title">Полезные ресурсы для дизайнеров и разработчиков</h1>
+                <!-- Табы фильтрации -->
+                <div class="tabs">
+                    <button class="tab-button active" data-filter="all">Все</button>
+                    <button class="tab-button" data-filter="design">Дизайн</button>
+                    <button class="tab-button" data-filter="development">Разработка</button>
+                    <button class="tab-button" data-filter="inspiration">Вдохновение</button>
+                </div>
+                <!-- Сетка карточек -->
+                <div class="links-grid">
+                    <!-- Карточка 1 -->
+                    <article class="link-card" data-category="design">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x150?text=Design+Resource" alt="Обложка Design Resource">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Awwwards</h3>
+                            <p class="card-description">Сообщество дизайнеров, которые отбирают лучшие сайты мира по дизайну и креативности.</p>
+                            <a href="https://www.awwwards.com/" target="_blank" class="card-link">Перейти на сайт</a>
+                        </div>
+                    </article>
+                    <!-- Карточка 2 -->
+                    <article class="link-card" data-category="development">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x150?text=Dev+Tool" alt="Обложка Dev Tool">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">CSS-Tricks</h3>
+                            <p class="card-description">Отличный блог и руководство по всем аспектам веб-разработки, особенно по фронтенду.</p>
+                            <a href="https://css-tricks.com/" target="_blank" class="card-link">Перейти на сайт</a>
+                        </div>
+                    </article>
+                    <!-- Карточка 3 -->
+                    <article class="link-card" data-category="inspiration">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x150?text=Inspiration" alt="Обложка Inspiration">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Behance</h3>
+                            <p class="card-description">Крупнейшая платформа для демонстрации творческих работ дизайнеров, иллюстраторов и фотографов.</p>
+                            <a href="https://www.behance.net/" target="_blank" class="card-link">Перейти на сайт</a>
+                        </div>
+                    </article>
+                    <!-- Карточка 4 -->
+                    <article class="link-card" data-category="design">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x150?text=Design+System" alt="Обложка Design System">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Dribbble</h3>
+                            <p class="card-description">Социальная сеть для дизайнеров, где они делятся своими работами и вдохновляются.</p>
+                            <a href="https://dribbble.com/" target="_blank" class="card-link">Перейти на сайт</a>
+                        </div>
+                    </article>
+                    <!-- Добавьте здесь больше карточек по аналогии -->
+                </div>
+            </div>
+        </main>
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-copyright"> &copy; 2023 LinkCatalog. Все права защищены. </div>
+                    <div class="footer-contacts">
+                        <strong>Контакты:</strong>
+                        <a href="mailto:info@linkcatalog.example">info@linkcatalog.example</a>
+                    </div>
+                    <div class="footer-domain">
+                        <strong>Домен продается:</strong> По всем вопросам обращайтесь на указанную почту.
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="../js/script.js"></script>
     </body>
 </html>
