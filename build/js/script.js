@@ -1,2 +1,2 @@
-document.addEventListener("DOMContentLoaded",function(){const t=document.querySelectorAll(".tab-button");const e=document.querySelectorAll(".link-card");t.forEach(a=>{a.addEventListener("click",function(){t.forEach(t=>t.classList.remove("active"));this.classList.add("active");const a=this.getAttribute("data-filter");e.forEach(t=>{if("all"===a||t.getAttribute("data-category")===a)t.style.display="flex";else t.style.display="none"})})})});
+
 //# sourceMappingURL=script.js.map
