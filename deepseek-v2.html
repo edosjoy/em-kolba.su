@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ем колбасу</title>
+        <meta name="description" content="Сайт Ем Колбасу" />
+        <meta name="keywords" content="Сайт Ем Колбасу" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../images/favicon/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <style>
+            /* Базовые стили */
+            :root
+            {
+                --primary-color: #4361ee;
+                --secondary-color: #3a0ca3;
+                --accent-color: #7209b7;
+                --light-color: #f8f9fa;
+                --dark-color: #212529;
+                --gray-color: #6c757d;
+                --border-radius: 8px;
+                --transition: all 0.3s ease;
+            }
+
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body
+            {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: var(--dark-color);
+                background-color: #f5f7ff;
+                padding: 20px;
+            }
+
+            .container
+            {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            /* Заголовок */
+            header
+            {
+                text-align: center;
+                margin-bottom: 40px;
+                padding: 20px 0;
+            }
+
+            h1
+            {
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: var(--secondary-color);
+                margin-bottom: 10px;
+            }
+
+            .subtitle
+            {
+                font-size: 1.1rem;
+                color: var(--gray-color);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            /* Поиск и фильтры */
+            .controls
+            {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .search-box
+            {
+                flex: 1;
+                min-width: 300px;
+                position: relative;
+            }
+
+            .search-box input
+            {
+                width: 100%;
+                padding: 12px 20px 12px 45px;
+                border: 1px solid #ddd;
+                border-radius: var(--border-radius);
+                font-size: 1rem;
+                transition: var(--transition);
+                background-color: white;
+            }
+
+            .search-box input:focus
+            {
+                outline: none;
+                border-color: var(--primary-color);
+                box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+            }
+
+            .search-icon
+            {
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--gray-color);
+            }
+
+            .category-filter
+            {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .category-btn
+            {
+                padding: 10px 20px;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: var(--border-radius);
+                cursor: pointer;
+                transition: var(--transition);
+                font-size: 0.9rem;
+            }
+
+            .category-btn:hover
+            {
+                background-color: #f0f0f0;
+            }
+
+            .category-btn.active
+            {
+                background-color: var(--primary-color);
+                color: white;
+                border-color: var(--primary-color);
+            }
+
+            /* Сетка ссылок */
+            .links-grid
+            {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 25px;
+            }
+
+            .link-card
+            {
+                background-color: white;
+                border-radius: var(--border-radius);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                transition: var(--transition);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .link-card:hover
+            {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-header
+            {
+                padding: 20px 20px 15px;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .card-title
+            {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+            }
+
+            .favicon
+            {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+            }
+
+            .site-name
+            {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--secondary-color);
+                text-decoration: none;
+            }
+
+            .site-name:hover
+            {
+                color: var(--accent-color);
+            }
+
+            .site-url
+            {
+                font-size: 0.85rem;
+                color: var(--gray-color);
+                word-break: break-all;
+            }
+
+            .card-body
+            {
+                padding: 15px 20px;
+                flex-grow: 1;
+            }
+
+            .site-description
+            {
+                color: var(--dark-color);
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+
+            .site-tags
+            {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-top: auto;
+            }
+
+            .tag
+            {
+                display: inline-block;
+                padding: 3px 8px;
+                background-color: #e9ecef;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                color: var(--gray-color);
+            }
+
+            .card-footer
+            {
+                padding: 15px 20px;
+                background-color: #f8f9fa;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .visit-btn
+            {
+                padding: 8px 16px;
+                background-color: var(--primary-color);
+                color: white;
+                border: none;
+                border-radius: var(--border-radius);
+                cursor: pointer;
+                transition: var(--transition);
+                font-weight: 500;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .visit-btn:hover
+            {
+                background-color: var(--secondary-color);
+            }
+
+            .link-meta
+            {
+                font-size: 0.8rem;
+                color: var(--gray-color);
+            }
+
+            /* Сообщение о пустом результате */
+            .no-results
+            {
+                grid-column: 1 / -1;
+                text-align: center;
+                padding: 40px;
+                color: var(--gray-color);
+            }
+
+            /* Футер */
+            footer
+            {
+                text-align: center;
+                margin-top: 50px;
+                padding: 20px 0;
+                color: var(--gray-color);
+                font-size: 0.9rem;
+                border-top: 1px solid #eee;
+            }
+
+            /* Адаптивность */
+            @media (max-width: 768px)
+            {
+                .controls
+                {
+                    flex-direction: column;
+                }
+
+                .search-box
+                {
+                    min-width: 100%;
+                }
+
+                .links-grid
+                {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        <div class="container">
+            <header>
+                <h1>Каталог полезных ссылок</h1>
+                <p class="subtitle">Коллекция тщательно отобранных ресурсов для работы, обучения и вдохновения</p>
+            </header>
+            <div class="controls">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Поиск по названию, описанию или тегам...">
+                </div>
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">Все</button>
+                    <button class="category-btn" data-category="development">Разработка</button>
+                    <button class="category-btn" data-category="design">Дизайн</button>
+                    <button class="category-btn" data-category="tools">Инструменты</button>
+                    <button class="category-btn" data-category="learning">Обучение</button>
+                </div>
+            </div>
+            <div class="links-grid" id="linksContainer">
+                <!-- Карточки ссылок будут добавлены через JavaScript -->
+            </div>
+            <footer>
+                <p>Каталог регулярно обновляется. Предложения по добавлению ссылок приветствуются.</p>
+            </footer>
+        </div>
+        <script>
+            // Данные ссылок
+            const linksData = [
+            {
+                id: 1,
+                name: "MDN Web Docs",
+                url: "https://developer.mozilla.org",
+                description: "Обширная документация по веб-технологиям, включая HTML, CSS и JavaScript.",
+                category: "development",
+                tags: ["документация", "веб-разработка", "справочник"],
+                lastUpdated: "Обновляется регулярно"
+            },
+            {
+                id: 2,
+                name: "CSS-Tricks",
+                url: "https://css-tricks.com",
+                description: "Статьи, руководства и примеры по CSS и фронтенд-разработке.",
+                category: "development",
+                tags: ["CSS", "статьи", "примеры"],
+                lastUpdated: "Еженедельно"
+            },
+            {
+                id: 3,
+                name: "Dribbble",
+                url: "https://dribbble.com",
+                description: "Сообщество дизайнеров, демонстрирующих свои работы и вдохновляющих друг друга.",
+                category: "design",
+                tags: ["дизайн", "вдохновение", "портфолио"],
+                lastUpdated: "Ежедневно"
+            },
+            {
+                id: 4,
+                name: "Figma",
+                url: "https://www.figma.com",
+                description: "Инструмент для совместной работы над дизайном в реальном времени.",
+                category: "design",
+                tags: ["дизайн", "инструменты", "коллаборация"],
+                lastUpdated: "Постоянно"
+            },
+            {
+                id: 5,
+                name: "GitHub",
+                url: "https://github.com",
+                description: "Платформа для хостинга и совместной разработки IT-проектов.",
+                category: "development",
+                tags: ["код", "репозитории", "коллаборация"],
+                lastUpdated: "Постоянно"
+            },
+            {
+                id: 6,
+                name: "Stack Overflow",
+                url: "https://stackoverflow.com",
+                description: "Вопросы и ответы для программистов всех уровней.",
+                category: "development",
+                tags: ["вопросы", "ответы", "сообщество"],
+                lastUpdated: "Ежедневно"
+            },
+            {
+                id: 7,
+                name: "FreeCodeCamp",
+                url: "https://www.freecodecamp.org",
+                description: "Бесплатные курсы по программированию с практическими проектами.",
+                category: "learning",
+                tags: ["обучение", "курсы", "проекты"],
+                lastUpdated: "Регулярно"
+            },
+            {
+                id: 8,
+                name: "Can I Use",
+                url: "https://caniuse.com",
+                description: "Таблицы совместимости веб-технологий в различных браузерах.",
+                category: "development",
+                tags: ["совместимость", "браузеры", "справочник"],
+                lastUpdated: "Регулярно"
+            },
+            {
+                id: 9,
+                name: "Unsplash",
+                url: "https://unsplash.com",
+                description: "Бесплатные высококачественные фотографии для личного и коммерческого использования.",
+                category: "design",
+                tags: ["фотографии", "стоки", "ресурсы"],
+                lastUpdated: "Ежедневно"
+            },
+            {
+                id: 10,
+                name: "CodePen",
+                url: "https://codepen.io",
+                description: "Социальная среда разработки для фронтенд-дизайнеров и разработчиков.",
+                category: "development",
+                tags: ["песочница", "примеры", "сообщество"],
+                lastUpdated: "Ежедневно"
+            },
+            {
+                id: 11,
+                name: "Notion",
+                url: "https://www.notion.so",
+                description: "Мощный инструмент для организации работы, заметок и проектов.",
+                category: "tools",
+                tags: ["продуктивность", "организация", "заметки"],
+                lastUpdated: "Постоянно"
+            },
+            {
+                id: 12,
+                name: "Coursera",
+                url: "https://www.coursera.org",
+                description: "Онлайн-курсы от ведущих университетов и компаний мира.",
+                category: "learning",
+                tags: ["курсы", "образование", "онлайн"],
+                lastUpdated: "Регулярно"
+            }];
+            // Функция для отображения ссылок
+            function displayLinks(links)
+            {
+                const container = document.getElementById('linksContainer');
+                container.innerHTML = '';
+                if (links.length === 0)
+                {
+                    container.innerHTML = '<div class="no-results">По вашему запросу ничего не найдено</div>';
+                    return;
+                }
+                links.forEach(link =>
+                {
+                    const card = document.createElement('div');
+                    card.className = 'link-card';
+                    card.setAttribute('data-category', link.category);
+                    card.innerHTML = `
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="favicon" style="background-color: #${Math.floor(Math.random()*16777215).toString(16)};"></div>
+                            <a href="${link.url}" target="_blank" class="site-name">${link.name}</a>
+                        </div>
+                        <div class="site-url">${link.url}</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="site-description">${link.description}</p>
+                        <div class="site-tags">
+                            ${link.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="link-meta">${link.lastUpdated}</span>
+                        <a href="${link.url}" target="_blank" class="visit-btn">Перейти</a>
+                    </div>
+                `;
+                    container.appendChild(card);
+                });
+            }
+            // Функция для фильтрации ссылок
+            function filterLinks()
+            {
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const activeCategory = document.querySelector('.category-btn.active').dataset.category;
+                const filteredLinks = linksData.filter(link =>
+                {
+                    const matchesSearch = link.name.toLowerCase().includes(searchTerm) || link.description.toLowerCase().includes(searchTerm) || link.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+                    const matchesCategory = activeCategory === 'all' || link.category === activeCategory;
+                    return matchesSearch && matchesCategory;
+                });
+                displayLinks(filteredLinks);
+            }
+            // Инициализация страницы
+            document.addEventListener('DOMContentLoaded', () =>
+            {
+                // Отображаем все ссылки при загрузке
+                displayLinks(linksData);
+                // Обработчики событий для поиска
+                document.getElementById('searchInput').addEventListener('input', filterLinks);
+                // Обработчики событий для фильтров по категориям
+                document.querySelectorAll('.category-btn').forEach(button =>
+                {
+                    button.addEventListener('click', function()
+                    {
+                        document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        filterLinks();
+                    });
+                });
+            });
+        </script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
