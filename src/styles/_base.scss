@@ -1,23 +1,31 @@
-body {
-    font-family: Roboto, arial, sans-serif;
-    font-size: 10px;
-    color: #000;
-    font-weight: normal;
-    font-style: normal;
-    line-height: normal;
+html {
+    font-size: var(--base-font-size);
 
     @media screen and (max-width: 1440px) {
         font-size: .69444444444444444444444444444444vw;
     }
 
     @media screen and (max-width: 720px) {
-        font-size: 1.3888888888888888888888888888889vw;
+        font-size: 2.77777778vw;
     }
 }
 
+body {
+    font-family: Roboto, arial, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
 [class*="__container"] {
-    max-width: calc(1440px + 2em);
+    max-width: calc(1440px + 2rem);
     width: 100%;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0 1rem;
+
+    @media screen and (max-width: 720px) {
+        padding: 0 .5rem;
+    }
 }
