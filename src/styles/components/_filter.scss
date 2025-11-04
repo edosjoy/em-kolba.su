@@ -1,0 +1,44 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1rem;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: 720px) {
+        margin-bottom: 3rem;
+        gap: 1rem;
+    }
+
+    // .filter__btn
+    &__btn {
+        font-size: 1.4rem;
+        color: var(--color-text-gray-button);
+        background-color: var(--bg-gray-button);
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: 720px) {
+            font-size: 1.2rem;
+            padding: 1.2rem 2rem;
+        }
+
+        @media (hover:hover) {
+            &:hover {
+                background-color: var(--bg-hover-gray-button);
+            }
+        }
+
+        // .filter__btn_active
+        &_active {
+            color: var(--color-text-blue-button);
+            background-color: var(--bg-blue-button);
+
+            @media (hover:hover) {
+                &:hover {
+                    background-color: var(--bg-blue-button);
+                }
+            }
+        }
+    }
+}
