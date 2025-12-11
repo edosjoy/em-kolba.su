@@ -1,0 +1,39 @@
+.footer {
+    color: var(--color-footer-text);
+    font-size: 1.2rem;
+
+    // .footer__container
+    &__container {
+        background-color: var(--bg-footer);
+    }
+
+    // .footer__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 1.5rem;
+
+        @media screen and (max-width: 720px) {
+            flex-direction: column;
+            gap: 1.5rem 0;
+            padding: 2em 0;
+            text-align: center;
+        }
+    }
+
+    // .footer__copyright
+    &__copyright {
+    }
+
+    // .footer__contacts
+    &__contacts {
+        & a {
+            color: var(--color-footer-text);
+            text-decoration: underline;
+        }
+    }
+
+    // .footer__domain
+    &__domain {
+    }
+}

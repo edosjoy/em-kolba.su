@@ -1,0 +1,68 @@
+.main__tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 4.5rem;
+
+    @media screen and (max-width: 720px) {
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+}
+
+.tile {
+    max-width: 37rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 5px -5px 15px 0px rgba(0, 0, 0, 0.15);
+
+    // .tile__image
+    &__image {
+        width: 100%;
+        height: 20.8rem;
+        overflow: hidden;
+        border-bottom: 1px solid #bababa;
+        border-radius: 1rem 1rem 0 0;
+
+        @media screen and (max-width: 720px) {
+            width: 100%;
+            height: 19.2rem;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+
+    // .tile__description
+    &__description {
+        padding: 2rem;
+    }
+
+    // .tile__heading
+    &__heading {
+        font-size: 1.4rem;
+        color: var(--color-text-heading);
+        margin-bottom: 1rem;
+    }
+
+    // .tile__text
+    &__text {
+        font-size: 1.2rem;
+        color: var(--color-text-tile);
+        margin-bottom: 1.5rem;
+    }
+
+    // .tile__button
+    &__button {
+        display: block;
+        font-size: 1.4rem;
+        color: var(--color-text-blue-button);
+        background-color: var(--bg-blue-button);
+        border-radius: .5rem;
+        padding: .8rem 1.6rem;
+        text-align: center;
+    }
+}
