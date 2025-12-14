@@ -18,7 +18,11 @@ function addSiteTiles(filterCategory) {
                     </div>
                     <h2 class="tile__heading">${webSite.heading}</h2>
                     <div class="tile__text">${webSite.text}</div>
-                    <a href="${webSite.link}?utm_source=em-kolba.su&utm_medium=organic&utm_campaign=catalog" class="tile__button" target="_blank">Перейти</a>
+                    <a href="${webSite.link}?utm_source=em-kolba.su&utm_medium=organic&utm_campaign=catalog"
+                        class="tile__button"
+                        target="_blank"
+                        onclick="ym(105843941,'reachGoal','goToTheSite'); return true;"
+                    >Перейти</a>
                 </div>`;
             tilesWrapper.insertAdjacentElement('beforeend', tile);
         }

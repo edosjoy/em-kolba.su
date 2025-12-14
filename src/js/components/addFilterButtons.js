@@ -18,6 +18,7 @@ function addFilterButtons() {
         const button = document.createElement('button');
         button.classList.add('filter__btn');
         isActive && button.classList.add('filter__btn_active');
+        button.setAttribute('onclick', 'ym(105843941,"reachGoal","filterButton"); return true;');
         button.innerText = text;
         filter.insertAdjacentElement('beforeend', button);
     }
