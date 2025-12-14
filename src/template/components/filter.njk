@@ -1,13 +1,1 @@
-{% set filterItems = [
-    'Магазины колбас',
-    'Рецепты',
-    'Все для приготовления'
-] %}
-
-<div class="filter js-filter">
-    <button class="filter__btn filter__btn_active">Все</button>
-
-    {% for filterItem in filterItems %}
-        <button class="filter__btn">{{ filterItem }}</button>
-    {% endfor %}
-</div>
+<div class="filter js-filter"></div>
