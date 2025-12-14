@@ -1,2 +1,3 @@
 addFilterButtons();
-addSiteTiles();
+addSiteTiles('Все');
+filter();
