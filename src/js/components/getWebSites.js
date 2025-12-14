@@ -5,7 +5,7 @@ function getWebSites() {
                 src: './images/tiles/myasodelie.jpeg',
                 alt: 'Сайт myasodelie.ru',
             },
-            heading: 'Мясоделие',
+            heading: 'Мясоделие-1',
             text: 'Товары для производства колбас',
             link: 'https://myasodelie.ru/',
             categories: [
@@ -19,7 +19,7 @@ function getWebSites() {
                 src: './images/tiles/myasodelie.jpeg',
                 alt: 'Сайт myasodelie.ru',
             },
-            heading: 'Мясоделие',
+            heading: 'Мясоделие-2',
             text: 'Товары для производства колбас',
             link: 'https://myasodelie.ru/',
             categories: [
@@ -33,7 +33,7 @@ function getWebSites() {
                 src: './images/tiles/myasodelie.jpeg',
                 alt: 'Сайт myasodelie.ru',
             },
-            heading: 'Мясоделие',
+            heading: 'Мясоделие-3',
             text: 'Товары для производства колбас',
             link: 'https://myasodelie.ru/',
             categories: [
