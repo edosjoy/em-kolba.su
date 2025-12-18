@@ -167,6 +167,165 @@ function getWebSites() {
 
         {
             image: {
+                src: './images/tiles/myasodelie-ru.jpg',
+                alt: 'Сайт myasodelie.ru',
+            },
+            heading: 'Мясоделие',
+            text: 'Сертифицированная продукция для производства колбас',
+            link: 'https://myasodelie.ru/',
+            categories: [
+                'Товары для производства колбас',
+                'Рецепты колбас'
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/refro-ru.jpg',
+                alt: 'Сайт refro.ru',
+            },
+            heading: 'Рефро',
+            text: 'Поставщик оборудования для производства колбас',
+            link: 'https://www.refro.ru/',
+            categories: [
+                'Товары для производства колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/1000-menu.jpg',
+                alt: 'Сайт 1000.menu',
+            },
+            heading: 'Домашняя колбаса',
+            text: 'Много домашних вкусных рецептов приготовления колбасы',
+            link: 'https://1000.menu/catalog/domashnyaja-kolbasa',
+            categories: [
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/iamcook-ru.jpg',
+                alt: 'Сайт iamcook.ru',
+            },
+            heading: 'Домашняя колбаса',
+            text: 'Много домашних вкусных рецептов приготовления колбасы',
+            link: 'https://www.iamcook.ru/theme/sausage',
+            categories: [
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/kolbasadoma-ru.jpg',
+                alt: 'Сайт kolbasadoma.ru',
+            },
+            heading: 'Сайт о колбасе',
+            text: 'Рецепты домашней колбасы, советы по производству колбасных изделий дома',
+            link: 'https://kolbasadoma.ru/recepty-kolbasy',
+            categories: [
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/shop-kolbasadoma-ru.jpg',
+                alt: 'Сайт shop.kolbasadoma.ru',
+            },
+            heading: 'Колбасадома.ру',
+            text: 'Ингредиенты для приготовления колбасы и мясных изделий в домашних условиях и для фермерского производства',
+            link: 'https://shop.kolbasadoma.ru/',
+            categories: [
+                'Товары для производства колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/povarenok-ru.jpg',
+                alt: 'Сайт povarenok.ru',
+            },
+            heading: 'Поварёнок.ру',
+            text: 'Большое количество различных рецептов домашней вкусной колбасы',
+            link: 'https://www.povarenok.ru/recipes/dishes/other/?searchid=528',
+            categories: [
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/rutxt-ru.jpg',
+                alt: 'Сайт rutxt.ru',
+            },
+            heading: 'Кулинары',
+            text: 'Большое количество различных рецептов домашней вкусной колбасы',
+            link: 'https://rutxt.ru/kolbasy',
+            categories: [
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/kolbaster-com.jpg',
+                alt: 'Сайт kolbaster.com',
+            },
+            heading: 'Kolbaster',
+            text: 'Специи и оболочки для домашних колбас',
+            link: 'https://kolbaster.com/',
+            categories: [
+                'Товары для производства колбас',
+                'Рецепты колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/ozon-ru-category-vse-dlya-izgotovleniya-kolbasy-v-domashnih-usloviyah.jpg',
+                alt: 'Сайт ozon.ru',
+            },
+            heading: 'Ozon',
+            text: 'Все для изготовления колбасы в домашних условиях',
+            link: 'https://www.ozon.ru/category/vse-dlya-izgotovleniya-kolbasy-v-domashnih-usloviyah/',
+            categories: [
+                'Товары для производства колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/cheeseandmeat-ru.jpg',
+                alt: 'Сайт cheeseandmeat.ru',
+            },
+            heading: 'Школа Павла и Елены Куртинских',
+            text: 'Онлайн курсы мясоделия: ветчины, варёные и сыровяленые колбасы',
+            link: 'https://cheeseandmeat.ru/meatschool',
+            categories: [
+                'Обучение производству колбас',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/kolbaskidoma-ru.jpg',
+                alt: 'Сайт kolbaskidoma.ru',
+            },
+            heading: 'Колбаскидома',
+            text: 'Интернет-магазин товаров для приготовления домашних колбас',
+            link: 'https://kolbaskidoma.ru/',
+            categories: [
+                'Товары для производства колбас',
+                'Видео'
+            ]
+        },
+
+        {
+            image: {
                 src: './images/tiles/',
                 alt: 'Сайт ',
             },
@@ -174,7 +333,6 @@ function getWebSites() {
             text: '',
             link: '',
             categories: [
-                '',
                 '',
             ]
         },
@@ -189,6 +347,18 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/',
+                alt: 'Сайт ',
+            },
+            heading: '',
+            text: '',
+            link: '',
+            categories: [
                 '',
             ]
         },
@@ -203,6 +373,18 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/',
+                alt: 'Сайт ',
+            },
+            heading: '',
+            text: '',
+            link: '',
+            categories: [
                 '',
             ]
         },
@@ -217,6 +399,18 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/',
+                alt: 'Сайт ',
+            },
+            heading: '',
+            text: '',
+            link: '',
+            categories: [
                 '',
             ]
         },
@@ -231,6 +425,18 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
+            ]
+        },
+
+        {
+            image: {
+                src: './images/tiles/',
+                alt: 'Сайт ',
+            },
+            heading: '',
+            text: '',
+            link: '',
+            categories: [
                 '',
             ]
         },
@@ -245,7 +451,6 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
-                '',
             ]
         },
 
@@ -259,7 +464,6 @@ function getWebSites() {
             link: '',
             categories: [
                 '',
-                '',
             ]
         },
 
@@ -272,9 +476,23 @@ function getWebSites() {
             text: '',
             link: '',
             categories: [
-                '',
                 '',
             ]
         },
     ];
 }
+
+/*
+{
+    image: {
+        src: './images/tiles/',
+            alt: 'Сайт ',
+    },
+    heading: '',
+        text: '',
+    link: '',
+    categories: [
+        '',
+    ]
+},
+*/
