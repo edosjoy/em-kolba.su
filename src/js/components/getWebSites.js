@@ -326,161 +326,168 @@ function getWebSites() {
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/kolbaskiprosto-ru.jpg',
+                alt: 'Сайт kolbaskiprosto.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Колбаски Просто',
+            text: 'Компания специализируется на оптовой и розничной продаже товаров для домашней колбасы и переработки мяса',
+            link: 'https://www.kolbaskiprosto.ru/',
             categories: [
-                '',
+                'Товары для производства колбас',
+                'Обучение производству колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/nash-product-ru.jpg',
+                alt: 'Сайт nash-product.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Волгоградский мясокомбинат',
+            text: 'Крупнейший производитель продуктов питания в Южном Федеральном округе',
+            link: 'https://nash-product.ru/',
             categories: [
-                '',
+                'Производители колбас',
+                'Колбаса оптом',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/sibklad-ru.jpg',
+                alt: 'Сайт sibklad.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'СибКлад',
+            text: 'Продажа оборудования и сопутствующих товаров для производства колбасы',
+            link: 'https://sibklad.ru/catalog/vse_dlya_myasa_kolbas_i_ryby/\n',
             categories: [
-                '',
+                'Товары для производства колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/kolbasatandem-ru.jpg',
+                alt: 'Сайт kolbasatandem.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'ООО "Тандем"',
+            text: 'Семейное предприятие основанное в 2000 году',
+            link: 'https://kolbasatandem.ru/',
             categories: [
-                '',
+                'Производители колбас',
+                'Колбаса оптом',
+                'Магазины колбас'
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/voltekgroup-com.jpg',
+                alt: 'Сайт voltekgroup.com',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Волтэк Групп',
+            text: 'Поставка пищевого оборудования для мясопереработки',
+            link: 'https://voltekgroup.com/catalog/myasopererabatyvayushchee_oborudovanie/',
             categories: [
-                '',
+                'Товары для производства колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/rdshop-ru.jpg',
+                alt: 'Сайт rdshop.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Русская Дымка',
+            text: 'Товары для изготовления колбас и сосисок',
+            link: 'https://rdshop.ru/shop/kopchenie/izgotovlenie-kolbas-i-sosisok',
             categories: [
-                '',
+                'Товары для производства колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/ramix-official-ru.jpg',
+                alt: 'Сайт ramix-official.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Рамикс',
+            text: 'Натуральные оболочки, специи и ингредиенты для производства',
+            link: 'https://ramix-official.ru/catalog',
             categories: [
-                '',
+                'Товары для производства колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/delikateska-ru.jpg',
+                alt: 'Сайт delikateska.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Деликатеска',
+            text: 'Большой выбор колбас',
+            link: 'https://www.delikateska.ru/catalog/kolbasa',
             categories: [
-                '',
+                'Магазины колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/ramen-ru.jpg',
+                alt: 'Сайт ramen.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Раменский деликатес',
+            text: 'Большой выбор колбас собственного производства',
+            link: 'https://www.ramen.ru/catalog/kolbasy-sosiski-i-sardelki/',
             categories: [
-                '',
+                'Производители колбас',
+                'Магазины колбас'
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/belprodykt-ru.jpg',
+                alt: 'Сайт belprodykt.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Белорусские продукты',
+            text: 'Качественные и натуральные колбасы в широком ассортименте',
+            link: 'https://www.belprodykt.ru/collection/kolbasy',
             categories: [
-                '',
+                'Магазины колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/gastro-gusto-com.jpg',
+                alt: 'Сайт gastro-gusto.com',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Gastro Gusto',
+            text: 'Интернет-магазин колбас из Европы',
+            link: 'https://gastro-gusto.com/product-category/колбасы/',
             categories: [
-                '',
+                'Магазины колбас',
             ]
         },
 
         {
             image: {
-                src: './images/tiles/',
-                alt: 'Сайт ',
+                src: './images/tiles/shop-okraina-ru.jpg',
+                alt: 'Сайт shop.okraina.ru',
             },
-            heading: '',
-            text: '',
-            link: '',
+            heading: 'Окраина',
+            text: 'Делаем колбасу и мясные деликатесы',
+            link: 'https://shop.okraina.ru/catalog/kolbasy/',
             categories: [
-                '',
+                'Производители колбас',
+                'Магазины колбас'
             ]
         },
     ];
 }
+
 
 /*
 {
