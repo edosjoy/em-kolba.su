@@ -10,7 +10,7 @@ function addSiteTiles(filterCategory) {
             tile.classList.add('tile');
             tile.innerHTML = `
                 <div class="tile__image">
-                    <img src="${webSite.image.src}" alt="${webSite.image.alt}">
+                    <img src="" data-img_src="${webSite.image.src}" alt="${webSite.image.alt}">
                 </div>
                 <div class="tile__description">
                     <div class="tile__categories">
